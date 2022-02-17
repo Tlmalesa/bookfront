@@ -8,7 +8,7 @@ import { Observable } from 'rxjs/internal/Observable';
   providedIn: 'root'
 })
 export class BooksService {
-  BOOKS_URL: string = 'http://localhost:3000/books/';
+  BOOKS_URL: string = 'https://absaapp.herokuapp.com/books/';
 
   constructor(public http: HttpClient) {}
 
