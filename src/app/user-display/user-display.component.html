@@ -1,0 +1,16 @@
+
+ <div class="product-price-btn">
+  <div class="card-body" style="margin-left: 15%;margin-top: 22px;">
+    <a [routerLink]="['/app']" class="card-link">Back</a>
+  </div>
+</div>
+<div class="card text-center" style="width:50%;margin-left: 25%;margin-top: 42px;">
+  <div class="card-header" style="color: rgb(24, 23, 23);">Users Names</div>
+  <div class="card-body" *ngFor="let user of books">
+    <!-- get user id  -->
+    <!-- route to single user page by clicking on the user's name -->
+    <div class="product-price-btn">
+      <button [routerLink]="['/user',user.id]" type="button">{{user.name}}</button>
+    </div>
+  </div>
+</div>
